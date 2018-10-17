@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="photos/logos.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="yes">
+	<title>Arthur Soon - Photographe Bordeaux</title>
+  <link rel="stylesheet" media="screen" href="ressources/style.css">
+
+  <meta name="Description" content="Photographe  professionnel à Bordeaux, l'artiste surréaliste Arthur Soon photographie en remettant la nature aux centre de ses oeuvres. Décorez votre intérieur avec des photos réalisées par un photographe professionnel.">
+  <meta property="og:url"                content="http://www.arthursoon.com" />
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content="Arthur Soon" />
+  <meta property="og:description"        content="Artiste surréaliste remettant la nature au premier plan." />
+  <meta property="og:image"              content="http://www.arthursoon.com/ressources/logo.png" />
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script src="ressources/logo.js"></script>
+</head>
+<body onload="init();">
+
+	
+<div id="couverture">
+        <div id="popup">
+            <div id="close"></div>
+            <div id="popup_contenu"></div>
+        </div>
+    </div>  
+
+<div id="menu2">
+	<ul>
+      <li><a href="#" class="homelink">Accueil</a></li>
+      <li><a href="#" class="aboutLink">Photographies</a></li>
+      <li><a href="#" class="newsLink">Déforestation</a></li>
+      <li><a href="#" class="contactLink">Formats</a></li>
+      <li><a href="#" class="top">A propos</a></li>
+      <li><a href="#" class="bottom">Contact</a></li>
+  </ul>
+</div>		
+<header>
+
+<div class="bloc33 colorun">
+<div id="menu">
+<div id="menu-button" role="button" title="sweet hamburger">
+  <div class="hamburger"><div class="inner"></div></div>
+
+ <nav class="objectif">
+<ul>
+  <li><a href="#" class="homelink home">Accueil</a></li>
+    <li><a href="#" class="aboutLink photo">Photos</a></li>
+    <li><a href="#" class="newsLink deforestation">Déforestation</a></li>
+    <li><a href="#" class="contactLink format" >Formats</a></li>
+     <li><a href="#" class="top about" class="">A propos</a></li>
+    <li><a href="#" class="bottom contact">Contact</a></li>
+  </ul>
+
+</nav> 
+
+</div>
+<div id="logo" style="text-align: center">menu</div>
+
+<h1>Arthur Soon</h1>
+<h2>Photographe Professionnel Artistique</h2>
+</div>
+
+</div>
+  
+</header>
+
+<section>
+
+
+    <article id="cube">
+    <div class="face one ">
+    <div class="overflowDeux">
+    <div class="arbre"></div>
+    	<div class="apropos">
+     <p> <span class="lettre">A</span>rthur Soon Habite Bordeaux.
+Formation Bts et troisieme année de spécialisation à l’ETPA, école de photographie à Toulouse.
+
+<span class="lettre"></span><br>Artiste surréaliste Bordelais, <strong>Arthur Soon </strong>effectue des fouilles végétales à la recherche de nouvelles preuves, d’une nouvelle orientation artistique qui remet au centre la nature par l’emerveillement retrouvée.</p>
+<hr>
+<p><span class="lettre">P</span>hotographe à Phox.</p>
+
+</div>   
+</div>
+</div>
+    <div class="face two">
+	<div id="animation_container" style="background-color:rgba(0, 0, 0, 1.00); width:400px; height:400px; position: absolute; left: 0px; top: 0px; ">
+		<canvas id="canvas" width="400" height="400" style="position: absolute; display: block;bottom:0;right: 0; background-color:rgba(0, 0, 0, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:400px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
+		<p class="citation">« Des photos réelles… 
+Des Histoires… 
+Des pinceaux noirs… 
+L’émerveillement retrouvé à travers notre mirroir.»</p>
+		</div>
+	</div>
+</div>
+
+<div class="face three">
+  <div class="overflowUn">
+
+ 
+
+    <div class="photographie">
+ 
+      
+      <img src="photos/une.jpg" alt="photographie artistique une" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/>
+      <img src="photos/deux.jpg" alt="photographie artistique deux" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/>
+      <img src="photos/trois.jpg" alt="photographie artistique trois" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      <img src="photos/quatorze.jpg" alt="photographie artistique quatre" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      <img src="photos/cinq.jpg" alt="photographie artistique cinq" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      <img src="photos/six.jpg" alt="photographie artistique six" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      <img src="photos/sept.jpg" alt="photographie artistique sept" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      <img src="photos/huit.jpg" alt="photographie artistique huit" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="photos/neuf.jpg" alt="photo art neuf" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      <img src="photos/dix.jpg" alt="photo art dix" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      <img src="photos/onze.jpg" alt="photo art onze" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+      <img src="photos/douze.jpg" alt="photo art douze" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+      <img src="photos/treize.jpg" alt="photo art treize" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+      <img src="photos/quatre.jpg" alt="photo art quatorze" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+      <img src="photos/quinze.png" alt="photo art quinze" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+      <img src="photos/seize.jpg" alt="photo art seize" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+
+  <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 16</div>
+      <img src="photos/une.jpg" class="photos1" style="width:25vw">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 16</div>
+      <img src="photos/deux.jpg" class="photos1" style="width:25vw">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 16</div>
+      <img src="photos/trois.jpg" class="photos1" style="width:25vw">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 16</div>
+      <img src="photos/quatorze.jpg" class="photos1" style="width:25vw">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 16</div>
+      <img src="photos/cinq.jpg" class="photos1" style="width:25vw">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 16</div>
+      <img src="photos/six.jpg" class="photos1" style="width:25vw">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 16</div>
+      <img src="photos/sept.jpg" class="photos1" style="width:25vw">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 16</div>
+      <img src="photos/huit.jpg" class="photos1" style="width:25vw">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 16</div>
+      <img src="photos/neuf.jpg" class="photos1" style="width:25vw">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">10 / 16</div>
+      <img src="photos/dix.jpg" class="photos1" style="width:25vw">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">11 / 16</div>
+      <img src="photos/onze.jpg" class="photos1" style="width:25vw">
+    </div> 
+    <div class="mySlides">
+      <div class="numbertext">12 / 16</div>
+      <img src="photos/douze.jpg" class="photos1" style="width:25vw">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">13 / 16</div>
+      <img src="photos/treize.jpg" class="photos1" style="width:25vw">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">14 / 16</div>
+      <img src="photos/quatre.jpg" class="photos2" style="width:40vw">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">15 / 16</div>
+      <img src="photos/quinze.png" class="photos2" style="width:40vw">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">16 / 16</div>
+      <img src="photos/seize.jpg" class="photos1" style="width:26vw">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+     <p id="caption" style="height:0px;"></p>
+  
+<div style="display:flex;overflow-x: hidden">
+    <div class="column">
+      <img class="demo cursor" src="photos/une.jpg" style="width:25px" onclick="currentSlide(1)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/deux.jpg" style="width:25px" onclick="currentSlide(2)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/trois.jpg" style="width:25px" onclick="currentSlide(3)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/quatorze.jpg" style="width:25px" onclick="currentSlide(4)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/cinq.jpg" style="width:25px" onclick="currentSlide(5)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/six.jpg" style="width:25px" onclick="currentSlide(6)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/sept.jpg" style="width:25px" onclick="currentSlide(7)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/huit.jpg" style="width:25px" onclick="currentSlide(8)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/neuf.jpg" style="width:25px" onclick="currentSlide(9)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/dix.jpg" style="width:25px" onclick="currentSlide(10)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/onze.jpg" style="width:25px" onclick="currentSlide(11)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/douze.jpg" style="width:25px" onclick="currentSlide(12)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/treize.jpg" style="width:25px" onclick="currentSlide(13)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/quatre.jpg" style="width:25px" onclick="currentSlide(14)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/quinze.jpg" style="width:25px" onclick="currentSlide(15)" alt="photographie artistique">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="photos/seize.jpg" style="width:25px" onclick="currentSlide(16)" alt="photographie artistique">
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+    
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+    <div class="face four">
+    <div class="overflow">
+    <div class="titre">
+    <h1>LA DEFORESTATION</h1>
+         <h2>"Un arbre est inestimable, ce qu'il nous apporte n'a pas de prix..."</h2><a href="https://www.notre-planete.info/actualites/actu_891_causes_solutions_deforestation.php">Notre planète</a>
+</div>
+<div class="texte">
+<p><span class="lettre">
+L</span>a déforestation est un phénomène puissant, qui touche toutes les forêts tropicales, en particulier en Amazonie, en Afrique équatoriale et en Asie du Sud-Est. Chaque année, ce sont plus de 10 millions d’hectares qui disparaissent. Une catastrophe pour la planète. </p> <hr> <p><span class="lettre">
+S</span>elon le World Resources Institute, 80% de la couverture forestière mondiale originelle à été abattue ou dégradée, essentiellement au cours des 30 dernières années.   </p> <hr> <p>
+ <span class="lettre">P</span>ar ailleurs, ce sont les productions de sucre, de poivre, de caoutchouc, de café, de cacao, de banane, de tabac ou même de coca, qui déciment les forêts tropicales.  Beaucoup de petits agriculteurs pauvres et itinérants, comme à Madagascar, participent aussi à la déforestation : ils défrichent et brûlent la forêt pour ensemencer de petites parcelles de terres. </p>
+ <hr> <p><span class="lettre">
+ L’</span>exploitation minière de métaux et de minéraux précieux comme l’or, les diamants, le minerai de fer, l’étain, la bauxite et l’uranium, constitue aussi une cause majeure de déboisement. L’extraction du pétrole et du gaz y joue aussi un rôle puisque de vastes étendues de forêt sont régulièrement endommagées par les forages et la pose de pipelines, sans parler des fuites régulières de pétrole.  Les forêts sont sources de nourriture, de refuge, de combustibles, de vêtements et médicaments pour de nombreuses ethnies. Sans elles, ces populations perdent tout repère. </p>
+ <hr><p><span class="lettre">
+ M</span>ais l’Homme n’est pas seul concerné car l’on estime à 27 000 espèces animales et végétales perdues chaque année à cause d’elle.   Et ce n’est pas tout : le climat mondial est aussi affecté par la déforestation. 40% du carbone terrestre est stocké dans la végétation et les sols des forêts. Lorsqu’une forêt disparaît, le carbone qu'elle emmagasinait est en grande partie libéré dans l’atmosphère, augmentant l’effet de serre et le réchauffement de notre planète.   </p>
+ <hr> <p><span class="lettre">
+ L</span>e déboisement détruit également les sols, rendant les terres improductives, particulièrement en zones tropicales : sans couverture arborée, les sols naturellement pauvres, sont exposés au vent, au soleil, et à la pluie. Rapidement la couche arable est remplacée par une croûte dure et improductive.  En plus de protéger les sols, les forêts jouent un rôle essentiel dans le cycle de l’eau, qu’elles stockent et régulent. Sans forêts, il n’y aurait bientôt plus d’eau dans les rivières. Un phénomène déjà très perceptible dans beaucoup de pays, particulièrement en Afrique.
+ </p>
+
+
+
+</p> 
+</div>
+</div>
+    </div>
+    <div class="face five">
+    <div class="overflowTrois">
+    <div class="formats"></div>
+    <div class="tarif">
+         <h1>Formats disponibles</h1>
+<p><span class="lettre">L</span>es photographies sont vendues en affiche aux formats 13*18 et 18*24. <br>  
+<span class="lettre">L</span>es originaux sont aussi accessibles au format 18*24. <br>
+<span class="lettre">P</span>our toutes demandes tarifaires, veuillez-nous contacter.</p>
+      </div>
+    </div>
+</div>
+    <div class="face six">
+		<h3 class="blanc">Pour plus d'informations:</h3>
+        <p class="blanc">Envoyer nous un message pour toutes vos questions et/ou demandes.</p>
+
+<form  id="formulaire"  enctype="text/plain" action="mailto:davidhiguet001@yahoo.fr" method="post">
+	
+<input type="text"  id="nom" name="nom" placeholder="Name"></input>
+<input type="text" id="prenom" name="prenom" placeholder="Prenom">
+<input type="email"  id="email" name="email" placeholder="Email">
+
+
+<textarea name="Message"  id="message" height="135px" placeholder="Message">
+</textarea>
+<p id="test" ></p>
+<input type="button" name="Envoyer" id="send" value="ENVOYER">
+<input type="reset" name="Effacer" value="EFFACER">
+</form>
+
+
+</div>
+
+</article>
+</section>
+
+<footer>
+<div class="cop">
+<img class="btn ajax" src="photos/panda.png" data-ajax="copyright" alt="copyright" id="cpy">
+ </div>
+</footer>
+
+
+<script>
+// CANVA LOGO PAGE ACCUEIL
+
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	images = images||{};
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt) {	
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.Untitled1();
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+			sRatio = Math.min(xRatio, yRatio);
+       			
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;		
+		}
+	}
+	makeResponsive(false,'both',false,1);	
+	fnStartAnimation();
+}
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="ressources/script.js"></script>
+
+
+
+</body>
+</html>

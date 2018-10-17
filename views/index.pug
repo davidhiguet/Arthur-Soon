@@ -1,0 +1,245 @@
+extends layout
+
+block content
+  #couverture
+    #popup
+      #close
+      #popup_contenu
+  #menu2
+    ul
+      li
+        a.homelink(href='#') Accueil
+      li
+        a.aboutLink(href='#') Photographies
+      li
+        a.newsLink(href='#') Déforestation
+      li
+        a.contactLink(href='#') Formats
+      li
+        a.top(href='#') A propos
+      li
+        a.bottom(href='#') Contact
+  header
+    .bloc33.colorun
+      #menu
+        #menu-button(role='button', title='sweet hamburger')
+          .hamburger
+            .inner
+          nav.objectif
+            ul
+              li
+                a.homelink.home(href='#') Accueil
+              li
+                a.aboutLink.photo(href='#') Photos
+              li
+                a.newsLink.deforestation(href='#') Déforestation
+              li
+                a.contactLink.format(href='#') Formats
+              li
+                a.top.about(href='#') A propos
+              li
+                a.bottom.contact(href='#') Contact
+        #logo(style='text-align: center') menu
+        h1 Arthur Soon
+        h2 Photographe Professionnel Artistique
+  section
+    article#cube
+      .face.one
+        .overflowDeux
+          .arbre
+          .apropos
+            p
+              span.lettre A
+              | rthur Soon Habite Bordeaux.
+              | Formation Bts et troisieme année de spécialisation à l’ETPA, école de photographie à Toulouse.
+              span.lettre
+              br
+              | Artiste surréaliste Bordelais, 
+              strong Arthur Soon 
+              | effectue des fouilles végétales à la recherche de nouvelles preuves, d’une nouvelle orientation artistique qui remet au centre la nature par l’emerveillement retrouvée.
+            hr
+            p
+              span.lettre P
+              | hotographe à Phox.
+      .face.two
+        #animation_container(style="background-color:rgba(0, 0, 0, 1.00); width:400px; height:400px; position: absolute; left: 0px; top: 0px; ")
+          canvas#canvas(width="400" height="400" style="position: absolute; display: block;bottom:0;right: 0; background-color:rgba(0, 0, 0, 1.00);")
+          #dom_overlay_container(style="pointer-events:none; overflow:hidden; width:400px; height:400px; position: absolute; left: 0px; top: 0px; display: block;")
+            p.citation
+              | « Des photos réelles…
+              | Des Histoires…
+              | Des pinceaux noirs…
+              | L’émerveillement retrouvé à travers notre mirroir.»
+      .face.three
+        .overflowUn
+          .photographie
+            img.hover-shadow.cursor(src='photos/une.jpg', alt='photographie artistique une', onclick='openModal();currentSlide(1)')
+            img.hover-shadow.cursor(src='photos/deux.jpg', alt='photographie artistique deux', onclick='openModal();currentSlide(2)')
+            img.hover-shadow.cursor(src='photos/trois.jpg', alt='photographie artistique trois', onclick='openModal();currentSlide(3)')
+            img.hover-shadow.cursor(src='photos/quatorze.jpg', alt='photographie artistique quatre', onclick='openModal();currentSlide(4)')
+            img.hover-shadow.cursor(src='photos/cinq.jpg', alt='photographie artistique cinq', onclick='openModal();currentSlide(5)')
+            img.hover-shadow.cursor(src='photos/six.jpg', alt='photographie artistique six', onclick='openModal();currentSlide(6)')
+            img.hover-shadow.cursor(src='photos/sept.jpg', alt='photographie artistique sept', onclick='openModal();currentSlide(7)')
+            img.hover-shadow.cursor(src='photos/huit.jpg', alt='photographie artistique huit', onclick='openModal();currentSlide(8)')
+            img.hover-shadow.cursor(src='photos/neuf.jpg', alt='photo art neuf', onclick='openModal();currentSlide(9)')
+            img.hover-shadow.cursor(src='photos/dix.jpg', alt='photo art dix', onclick='openModal();currentSlide(10)')
+            img.hover-shadow.cursor(src='photos/onze.jpg', alt='photo art onze', onclick='openModal();currentSlide(11)')
+            img.hover-shadow.cursor(src='photos/douze.jpg', alt='photo art douze', onclick='openModal();currentSlide(12)')
+            img.hover-shadow.cursor(src='photos/treize.jpg', alt='photo art treize', onclick='openModal();currentSlide(13)')
+            img.hover-shadow.cursor(src='photos/quatre.jpg', alt='photo art quatorze', onclick='openModal();currentSlide(14)')
+            img.hover-shadow.cursor(src='photos/quinze.png', alt='photo art quinze', onclick='openModal();currentSlide(15)')
+            img.hover-shadow.cursor(src='photos/seize.jpg', alt='photo art seize', onclick='openModal();currentSlide(16)')
+            #myModal.modal
+              span.close.cursor(onclick='closeModal()') ×
+              .modal-content
+                .mySlides
+                  .numbertext 1 / 16
+                  img.photos1(src='photos/une.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 2 / 16
+                  img.photos1(src='photos/deux.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 3 / 16
+                  img.photos1(src='photos/trois.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 4 / 16
+                  img.photos1(src='photos/quatorze.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 5 / 16
+                  img.photos1(src='photos/cinq.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 6 / 16
+                  img.photos1(src='photos/six.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 7 / 16
+                  img.photos1(src='photos/sept.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 8 / 16
+                  img.photos1(src='photos/huit.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 9 / 16
+                  img.photos1(src='photos/neuf.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 10 / 16
+                  img.photos1(src='photos/dix.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 11 / 16
+                  img.photos1(src='photos/onze.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 12 / 16
+                  img.photos1(src='photos/douze.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 13 / 16
+                  img.photos1(src='photos/treize.jpg', style='width:25vw')
+                .mySlides
+                  .numbertext 14 / 16
+                  img.photos2(src='photos/quatre.jpg', style='width:40vw')
+                .mySlides
+                  .numbertext 15 / 16
+                  img.photos2(src='photos/quinze.png', style='width:40vw')
+                .mySlides
+                  .numbertext 16 / 16
+                  img.photos1(src='photos/seize.jpg', style='width:26vw')
+                a.prev(onclick='plusSlides(-1)') ❮
+                a.next(onclick='plusSlides(1)') ❯
+                .caption-container
+                  p#caption(style='height:0px;')
+                  div(style='display:flex;overflow-x: hidden')
+                    .column
+                      img.demo.cursor(src='photos/une.jpg', style='width:25px', onclick='currentSlide(1)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/deux.jpg', style='width:25px', onclick='currentSlide(2)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/trois.jpg', style='width:25px', onclick='currentSlide(3)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/quatorze.jpg', style='width:25px', onclick='currentSlide(4)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/cinq.jpg', style='width:25px', onclick='currentSlide(5)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/six.jpg', style='width:25px', onclick='currentSlide(6)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/sept.jpg', style='width:25px', onclick='currentSlide(7)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/huit.jpg', style='width:25px', onclick='currentSlide(8)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/neuf.jpg', style='width:25px', onclick='currentSlide(9)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/dix.jpg', style='width:25px', onclick='currentSlide(10)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/onze.jpg', style='width:25px', onclick='currentSlide(11)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/douze.jpg', style='width:25px', onclick='currentSlide(12)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/treize.jpg', style='width:25px', onclick='currentSlide(13)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/quatre.jpg', style='width:25px', onclick='currentSlide(14)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/quinze.jpg', style='width:25px', onclick='currentSlide(15)', alt='photographie artistique')
+                    .column
+                      img.demo.cursor(src='photos/seize.jpg', style='width:25px', onclick='currentSlide(16)', alt='photographie artistique')
+      .face.four
+        .overflow
+          .titre
+            h1 LA DEFORESTATION
+            h2 "Un arbre est inestimable, ce qu'il nous apporte n'a pas de prix..."
+            a(href='https://www.notre-planete.info/actualites/actu_891_causes_solutions_deforestation.php') Notre planète
+          .texte
+            p
+              span.lettre
+                | L
+              | a déforestation est un phénomène puissant, qui touche toutes les forêts tropicales, en particulier en Amazonie, en Afrique équatoriale et en Asie du Sud-Est. Chaque année, ce sont plus de 10 millions d’hectares qui disparaissent. Une catastrophe pour la planète.
+            hr
+            p
+              span.lettre
+                | S
+              | elon le World Resources Institute, 80% de la couverture forestière mondiale originelle à été abattue ou dégradée, essentiellement au cours des 30 dernières années.
+            hr
+            p
+              span.lettre P
+              | ar ailleurs, ce sont les productions de sucre, de poivre, de caoutchouc, de café, de cacao, de banane, de tabac ou même de coca, qui déciment les forêts tropicales.  Beaucoup de petits agriculteurs pauvres et itinérants, comme à Madagascar, participent aussi à la déforestation : ils défrichent et brûlent la forêt pour ensemencer de petites parcelles de terres.
+            hr
+            p
+              span.lettre
+                | L’
+              | exploitation minière de métaux et de minéraux précieux comme l’or, les diamants, le minerai de fer, l’étain, la bauxite et l’uranium, constitue aussi une cause majeure de déboisement. L’extraction du pétrole et du gaz y joue aussi un rôle puisque de vastes étendues de forêt sont régulièrement endommagées par les forages et la pose de pipelines, sans parler des fuites régulières de pétrole.  Les forêts sont sources de nourriture, de refuge, de combustibles, de vêtements et médicaments pour de nombreuses ethnies. Sans elles, ces populations perdent tout repère.
+            hr
+            p
+              span.lettre
+                | M
+              | ais l’Homme n’est pas seul concerné car l’on estime à 27 000 espèces animales et végétales perdues chaque année à cause d’elle.   Et ce n’est pas tout : le climat mondial est aussi affecté par la déforestation. 40% du carbone terrestre est stocké dans la végétation et les sols des forêts. Lorsqu’une forêt disparaît, le carbone qu'elle emmagasinait est en grande partie libéré dans l’atmosphère, augmentant l’effet de serre et le réchauffement de notre planète.
+            hr
+            p
+              span.lettre
+                | L
+              | e déboisement détruit également les sols, rendant les terres improductives, particulièrement en zones tropicales : sans couverture arborée, les sols naturellement pauvres, sont exposés au vent, au soleil, et à la pluie. Rapidement la couche arable est remplacée par une croûte dure et improductive.  En plus de protéger les sols, les forêts jouent un rôle essentiel dans le cycle de l’eau, qu’elles stockent et régulent. Sans forêts, il n’y aurait bientôt plus d’eau dans les rivières. Un phénomène déjà très perceptible dans beaucoup de pays, particulièrement en Afrique.
+            p
+      .face.five
+        .overflowTrois
+          .formats
+          .tarif
+            h1 Formats disponibles
+            p
+              span.lettre L
+              | es photographies sont vendues en affiche aux formats 13*18 et 18*24. 
+              br
+              span.lettre L
+              | es originaux sont aussi accessibles au format 18*24. 
+              br
+              span.lettre P
+              | our toutes demandes tarifaires, veuillez-nous contacter.
+      .face.six
+        h3.blanc Pour plus d'informations:
+        p.blanc Envoyer nous un message pour toutes vos questions et/ou demandes.
+        form#formulaire( action='/', method='post')
+          input#nom(type='text', name='nom', placeholder='Name')
+          input#prenom(type='text', name='prenom', placeholder='Prenom')
+          input#email(type='email', name='email', placeholder='Email')
+          textarea#message(name='message', height='135px', placeholder='Message')
+    
+          p#test
+          
+          input#send(type='button', name='Envoyer', value='ENVOYER')
+          input(type='reset', name='Effacer', value='EFFACER')
+  footer
+    .cop
+      img#cpy.btn.ajax(src='photos/panda.png', data-ajax='copyright', alt='copyright')
